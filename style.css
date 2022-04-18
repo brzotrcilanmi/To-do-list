@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+body{
+    height:100vh;
+    width:100%;
+    background: linear-gradient(to right, #614385, #516395);
+}
+
+.container{
+    min-height: 500px;
+    width:400px;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    letter-spacing: 2px;
+   
+}
+.container h1{
+    position:absolute;
+    top:10%;
+    left:22%;
+    font-family:"Rubik glitch", "roboto", sans-serif;
+    font-size:40px;
+}
+.click-on-the-task{
+    position:absolute;
+    left:16%;
+    top:22%;
+}
+.input-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-200%);
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+ input{
+    height:50px;
+    width:100px;
+    transition:.5s ease width;
+}
+ input:focus{
+    width:200px;
+}
+#add{
+    height:50px;
+    width:100px;
+    margin-left:20px;
+    font-size:20px;
+    background:#029aff;
+    color:#fff;
+    border:none;
+    transition: .3s ease;
+    
+}
+#add:hover{
+    background:#3cb1ff
+}
+.tasks{
+    width:100%;
+    position:absolute;
+    top:50%;
+    background:#fff;
+
+}
+.task{
+    width:100%;
+    height:50px;
+    background:#707070;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    font-size:25px;
+    justify-content:space-between;
+    margin-bottom:1px;
+    transition:.3s linear;
+}
+.remove{
+    height:100%;
+    width:100px;
+    background:red;
+    color:#fff;
+    font-size:20px;
+    border:none;
+}
+.done{
+    background:#3af35c;
+    transition:.3s linear;
+}
